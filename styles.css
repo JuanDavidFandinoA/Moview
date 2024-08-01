@@ -1,0 +1,83 @@
+@font-face {
+	font-family:CreatoDisplay;
+	src: url(fonts/CreatoDisplay-Light.otf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:CreatoDisplay-Bold;
+	src: url(fonts/CreatoDisplay-Bold.otf);
+	font-weight: bold;
+	font-style: bold;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #032839;
+}
+
+body {
+	font-family: 'CreatoDisplay';
+	color: white;
+}
+
+.container {
+	width: 80%;
+	max-width: 1000px;
+	margin: 50px auto 100px auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 50px;
+}
+
+.container .movie {
+	text-align: center;
+}
+
+.container .movie .title {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.container .movie .poster {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+
+.paging {
+	position: fixed;
+	bottom: 0;
+	background: #e36200;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+.paging button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 80px;
+	width: 300px;
+	background: #035880;
+	color: #ffd000;
+	border-radius: 50px;
+	font-family: 'CreatoDisplay-Bold';
+	font-size: 25px;
+	font-weight: 700;
+	transition: .5s ease all;
+}
+
+.paging button:hover {
+	background: #0c84b8;
+}
